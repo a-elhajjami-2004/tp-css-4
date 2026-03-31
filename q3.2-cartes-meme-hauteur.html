@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Question 3.1 - Cartes de même hauteur</title>
+		<style>
+			body {
+				font-family: system-ui;
+				display: flex;
+				flex-direction: column;
+				min-height: 100vh;
+			}
+			.card-container {
+				display: flex;
+				flex: 1;
+				gap: 1rem;
+				flex-wrap: wrap;
+			}
+
+			.card {
+				background-color: #5d2474;
+				flex: 1 1 300px; /* grow, shrink, min-width 300px */
+				display: flex;
+				flex-direction: column;
+			}
+			footer {
+				background-color: #5d2474;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="cards">
+			<div class="card">
+				<h3>Carte 1</h3>
+				<p>Contenu court.</p>
+				<a href="#" class="card-link">En savoir plus</a>
+			</div>
+			<div class="card">
+				<h3>Carte 2</h3>
+				<p>Contenu beaucoup plus long pour tester l'alignement vertical des boutons.</p>
+				<a href="#" class="card-link">En savoir plus</a>
+			</div>
+			<div class="card">
+				<h3>Carte 3</h3>
+				<p>Contenu moyen.</p>
+				<a href="#" class="card-link">En savoir plus</a>
+			</div>
+		</div>
+		<footer>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus saepe corrupti. Quae modi aut id vero
+			ex, beatae nihil dicta officia laborum aliquam nam nisi quaerat aperiam nostrum sapiente corporis quos sed?
+			Quidem suscipit laborum eos reprehenderit, repellat omnis enim magnam quaerat in inventore illum aliquam
+			quae voluptate id voluptatem, dignissimos eveniet minus laudantium molestias cupiditate tenetur voluptatibus
+			non. Reprehenderit quis quae aspernatur laudantium eos aperiam, quas fuga, id, reiciendis ducimus minima
+			voluptates obcaecati nemo! Culpa natus reprehenderit officiis!
+		</footer>
+	</body>
+</html>
