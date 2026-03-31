@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Question 4.2 - Layout complet avec Grid Areas</title>
+		<style>
+			.page-layout {
+				font-family: system-ui;
+				display: grid;
+				grid-template-columns: 200px 1fr;
+				grid-template-rows: auto 1fr auto;
+				grid-template-areas:
+					"header header"
+					"sidebar main"
+					"footer footer";
+				gap: 10px;
+				height: 100vh;
+			}
+			.header {
+				grid-area: header;
+				background-color: #f8b400;
+				padding: 1.25rem;
+				text-align: center;
+			}
+			.sidebar {
+				grid-area: sidebar;
+				background-color: #4caf50;
+				padding: 1.25rem;
+			}
+			.main {
+				grid-area: main;
+				background-color: #2196f3;
+				padding: 1.25rem;
+			}
+			.footer {
+				grid-area: footer;
+				background-color: #9c27b0;
+				padding: 1.25rem;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page-layout">
+			<header class="header">Header</header>
+			<nav class="sidebar">Sidebar</nav>
+			<main class="main">Contenu principal</main>
+			<footer class="footer">Footer</footer>
+		</div>
+	</body>
+</html>

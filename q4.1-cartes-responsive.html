@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Question 4.1 - Grille de cartes responsive</title>
+		<style>
+			.grid-cards {
+				font-family: system-ui;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: 1rem;
+				padding: 1rem;
+			}
+			.card {
+				background-color: #f0f0f0;
+				border: 1px solid #ccc;
+				border-radius: 0.5rem;
+				padding: 1rem;
+				text-align: center;
+				font-size: 1.2em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="grid-cards">
+			<div class="card">Carte 1</div>
+			<div class="card">Carte 2</div>
+			<div class="card">Carte 3</div>
+			<div class="card">Carte 4</div>
+			<div class="card">Carte 5</div>
+			<div class="card">Carte 6</div>
+		</div>
+	</body>
+</html>
