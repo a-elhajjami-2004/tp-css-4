@@ -30,6 +30,12 @@
 				background-color: #007bff;
 				transform: scale(1.2);
 			}
+
+			@media (prefers-reduced-motion: reduce) {
+				button {
+					transition: background-color 0.5s ease;
+				}
+			}
 		</style>
 	</head>
 	<body>
