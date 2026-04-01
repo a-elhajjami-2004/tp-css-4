@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Question 7.2 - Spinner de chargement</title>
+		<style>
+			body {
+				display: grid;
+				place-items: center;
+				height: 100vh;
+				margin: 0;
+			}
+			.spinner {
+				border: 16px dashed gray;
+				border-top: 16px solid transparent;
+				border-radius: 50%;
+				width: 120px;
+				height: 120px;
+				animation: spin 2s linear infinite;
+			}
+
+			@keyframes spin {
+				to {
+					transform: rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="spinner"></div>
+	</body>
+</html>

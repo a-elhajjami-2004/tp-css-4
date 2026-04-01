@@ -31,10 +31,9 @@
 
 ### Box Model
 
-1. Largeur totale = 15px (`margin-left`) 5px (`border-left`) + 20px (`padding-left`) + 300px (`width`) + 20px (`padding-right`) + 5px (`border-right`) + 15px (`margin-right`)\
-   = 380px
-2. Largeur totale = 15px (`margin-left`) + 300px (`width`) + 15px (`margin-right`)\
-   = 330px
+1. Largeur totale visible = 5px (`border-left`) + 20px (`padding-left`) + 300px (`width`) + 20px (`padding-right`) + 5px (`border-right`)\
+   = 350px
+2. Largeur totale visible = 300px (`width`)
 3. ```css
    *,
    *::before,
@@ -42,3 +41,11 @@
    	box-sizing: border-box;
    }
    ```
+
+## Exercice 8
+
+1. b
+2. b
+3. c
+4. b
+5. b

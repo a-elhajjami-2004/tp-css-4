@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Question 7.1 - Bouton animé au survol</title>
+		<style>
+			body {
+				display: grid;
+				place-items: center;
+				font-family: system-ui;
+				height: 100vh;
+				margin: 0;
+			}
+
+			button {
+				font-size: 2rem;
+				padding: 0.6em 1.2em;
+				background-color: #0056b3;
+				color: white;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				transition:
+					background-color 0.3s ease,
+					transform 0.3s ease;
+			}
+
+			button:hover {
+				background-color: #007bff;
+				transform: scale(1.2);
+			}
+		</style>
+	</head>
+	<body>
+		<button>Hover me!</button>
+	</body>
+</html>
