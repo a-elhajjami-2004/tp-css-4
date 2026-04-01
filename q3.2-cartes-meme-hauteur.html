@@ -5,29 +5,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Question 3.1 - Cartes de même hauteur</title>
 		<style>
+			* {
+				box-sizing: border-box;
+			}
+
 			body {
 				font-family: system-ui;
-				display: flex;
-				flex-direction: column;
-				min-height: 100vh;
-				margin: 0;
 				padding: 2rem;
 			}
 			.card-container {
 				display: flex;
-				flex: 1;
-				gap: 1rem;
 				flex-wrap: wrap;
+				gap: 1rem;
 			}
 
 			.card {
-				background-color: #5d2474;
-				flex: 1 1 300px; /* grow, shrink, min-width 300px */
+				background-color: lightyellow;
+				flex: 1 1 40ch;
 				display: flex;
 				flex-direction: column;
+				padding: 1em;
+				border-radius: 1em;
 			}
-			footer {
-				background-color: #5d2474;
+
+			.card p {
+				flex: 1;
+			}
+
+			.card-link {
+				margin-top: auto;
 			}
 		</style>
 	</head>
@@ -49,13 +55,5 @@
 				<a href="#" class="card-link">En savoir plus</a>
 			</div>
 		</div>
-		<footer>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque minus saepe corrupti. Quae modi aut id vero
-			ex, beatae nihil dicta officia laborum aliquam nam nisi quaerat aperiam nostrum sapiente corporis quos sed?
-			Quidem suscipit laborum eos reprehenderit, repellat omnis enim magnam quaerat in inventore illum aliquam
-			quae voluptate id voluptatem, dignissimos eveniet minus laudantium molestias cupiditate tenetur voluptatibus
-			non. Reprehenderit quis quae aspernatur laudantium eos aperiam, quas fuga, id, reiciendis ducimus minima
-			voluptates obcaecati nemo! Culpa natus reprehenderit officiis!
-		</footer>
 	</body>
 </html>
